@@ -1,24 +1,28 @@
 .pageHeader{
     text-align: center;
 }
+
 .carRow{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10%;
 }
+
 .carRow div{
     
     
     margin-top: 2%;
     
 }
+
 .carName{
     text-align: center;
     margin-top: 2%;
     margin-bottom: 0%;
 
 }
+
 .carPrice{
     text-align: center;
     margin-top: 2%;
