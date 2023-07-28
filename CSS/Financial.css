@@ -19,12 +19,16 @@
 /* boxes where user will input their credit score, cash down,
 term length, estimated APR, estimated trade-in value */
 #input-box {
-    display: flex;
+    text-align: center;
     background-color: #EDF0F5;
-    justify-content: space-evenly;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+    white-space: nowrap;
 }
 
 .box1 {
+    display: inline-block;
     width: 150px;
     background-color: #387D7A;
     padding: 50px;
@@ -32,6 +36,7 @@ term length, estimated APR, estimated trade-in value */
 }
 
 .box2 {
+    display: inline-block;
     width: 150px;
     background-color: #387D7A;
     padding: 50px;
@@ -39,6 +44,7 @@ term length, estimated APR, estimated trade-in value */
 }
 
 .box3 {
+    display: inline-block;
     width: 150px;
     background-color: #387D7A;
     padding: 50px;
@@ -46,6 +52,7 @@ term length, estimated APR, estimated trade-in value */
 }
 
 .box4 {
+    display: inline-block;
     width: 150px;
     background-color: #387D7A;
     padding: 50px;
@@ -53,6 +60,7 @@ term length, estimated APR, estimated trade-in value */
 }
 
 .box5 {
+    display: inline-block;
     width: 150px;
     background-color: #387D7A;
     padding: 50px;
@@ -63,13 +71,16 @@ term length, estimated APR, estimated trade-in value */
 
 /* boxes that will display the calculations */
 #display-box {
-    display: flex;
     background-color: white;
-    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* beginning of code to make dbox1-dbox4 hexagon */
 .dbox1, .dbox2, .dbox3, .dbox4 {
+
+    display: inline-block;
     position: relative;
     width: 250px;
     height: 180px;
@@ -101,6 +112,17 @@ term length, estimated APR, estimated trade-in value */
 /* end of code to make dbox1-dbox4 hexagon */
 
 
+/* lines inbetween hexagon */
+.line1, .line2, .line3 {
+
+    display: inline-block;
+    background-color: black;
+    width: 6px;
+    height: 180px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
 
 /* "contact dealership" button */
 #contact-button {
@@ -118,20 +140,26 @@ term length, estimated APR, estimated trade-in value */
     border-radius: 10px;
     font-size: 24px;
   }
+
   
 .cbutton:hover{
     background-color: #408EC5;
   }
 
 
-
 /* finance paragraph at bottom of page */
 #finance-terms1 {
     text-align: center;
     font-size: 22px;
+    position:relative;
   }
 
 #finance-terms2 {
     text-align: center;
     font-size: 20px;
+    position:relative;
   }
+
+body {
+    overflow:auto;
+}
