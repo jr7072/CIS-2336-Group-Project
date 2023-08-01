@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Impact;
+}
+
+nav{
+    background: #000000;
+    height: 80px;
+    width: 100%;
+}
+nav ul{
+text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 30px;
+    padding: 22px 14px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #ff00c8;
+    transition: .5s;
+}
+
+#img1{
+    position: absolute;
+    width: 10%;
+    height: auto;
+    opacity: 1;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
