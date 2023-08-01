@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="../CSS/Financial.css" />  
-</head>
-<body></body>
+    <head>
+        <link rel="stylesheet" href="../CSS/Financial.css" />  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
 
-<h1 id="top-heading">Payment Calculator | Selected Car</h1>
-<br>
+        <div class="navbar-container">
+            
+        </div>
 
-<img src="../Images/test_car_for_financial_page.jpg" class="image">
-<br><br>
+        <div class="heading-container body-container">
+            <div class="car-selection-form">
+                <h1 id="top-heading">Payment Calculator | <span class="car-title">Selected Car</span></h1>
+                <div class="select-container">
+                    <select class="select-text">
+                        <option value="Car-1">Car 1</option>
+                        <option value="Car-2">Car 2</option>
+                        <option value="Car-3">Car 3</option>
+                    </select>
+                </div>
+                <div class="select-container">
+                    <select class="select-text">
+                        <option value="Package-1">Package 1</option>
+                        <option value="Package-2">Package 2</option>
+                        <option value="Package-3">Package 3</option>
+                    </select>
+                </div>
+                <div class="msrp-display">
+                    <h3 class="select-text">Total MSRP: <span id="total-msrp">None</span></h3>
+                </div>
+            </div>
+        </div>
 
-<div id="input-box">
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
-    <div class="box5"></div>
-</div>
 
-<br><br>
+        <div class="car-image-container body-container">
+            <img src="../Images/test_car_for_financial_page.jpg" class="image">
+        </div> 
 
-<div id="display-box">
-    <div class="dbox1"></div>
-    <div class="line1"></div>
-    <div class="dbox2"></div>
-    <div class="line2"></div>
-    <div class="dbox3"></div>
-    <div class="line3"></div>
-    <div class="dbox4"></div>
+        <div id="input-box-container" class="body-container">
+            <select class="credit-score input-box">
+                <option value="Poor">Poor</option>
+                <option value="Fair">Fair</option>
+                <option value="Good">Good</option>
+                <option value="Excellent">Excellent</option>
+            </select>
+            <input type="number" min="0" max="20000" class="cash-down input-box" />
+            <select class="term-length input-box">
+                <option value="24">24 Months</option>
+                <option value="36">36 Months</option>
+                <option value="48">48 Months</option>
+                <option value="64">64 Months</option>
+            </select>
+            <div class="estimated-apr input-box">
+                <p class="apr-text">Estimated APR: <span class="apr-value">None</span></p>
+            </div>
+            <input class="estimated-trade-in-value input-box" type="number"/>
+        </div>
 
-</div>
+        <div id="display-box-container" class="body-container">
+            <div class="months-display display"></div>
+            <div class="line1 line"></div>
+            <div class="estimated-display display"></div>
+            <div class="line2 line"></div>
+            <div class="down-payment-display display"></div>
+            <div class="line3 line"></div>
+            <div class="finance-display display"></div>
 
-<br><br><br><br>
+        </div>
 
-<div id="contact-button">
-    <button type="button" class="cbutton">
-        <strong>CONTACT DEALERSHIP</strong>
-    </button>
-</div>
+        <div id="contact-button-container" class="body-container">
+            <button type="button" class="cbutton">
+                <strong>CONTACT DEALERSHIP</strong>
+            </button>
+        </div>
 
-<br><br><br><br><br>
-
-<p id="finance-terms1">Finance Terms</p>
-<p id="finance-terms2">
-    Payments calculated using this tool are ESTIMATES ONLY and do 
-    not include applicable taxes, title, licensing and fees. 
-    ACTUAL PRICES AND PAYMENTS MAY BE DIFFERENT. Financing payment 
-    calculations are based on APR and term. Available on approved 
-    credit to very well qualified customers through H4 Financial 
-    Services and participating H4 dealers on a new vehicle. Not all 
-    customers will qualify.</p>
-<br>
-
-</body>
+        <div id="finance-terms-container">
+            <p id="finance-terms1">Finance Terms</p>
+            <p id="finance-terms2">
+                Payments calculated using this tool are ESTIMATES ONLY and do 
+                not include applicable taxes, title, licensing and fees. 
+                ACTUAL PRICES AND PAYMENTS MAY BE DIFFERENT. Financing payment 
+                calculations are based on APR and term. Available on approved 
+                credit to very well qualified customers through H4 Financial 
+                Services and participating H4 dealers on a new vehicle. Not all 
+                customers will qualify.
+            </p>
+        </div>
+    </body>
 </html>
