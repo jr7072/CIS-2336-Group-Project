@@ -1,18 +1,20 @@
-<script>
-// Get the video
-var video = document.getElementById("myVideo");
+const navBar = () => {
 
-// Get the button
-var btn = document.getElementById("myBtn");
-
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
+  return (
+    `
+      <img src="../Images/4h.png" id="img1">
+      <ul>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="#">Car 1</a></li>
+          <li><a href="#">Car 2</a></li>
+          <li><a href="#">Car 3</a></li>
+          <li><a href="./Misc_accessories.html">Accessories</a></li>
+          <li><a href="./Services.html">Packages</a></li>
+          <li><a href="./Financials.html">Finances</a></li>
+          <li><a href="./About_us.html">About us</a></li>
+      </ul> 
+    `
+  )
 }
-</script>
+
+document.getElementById("nav-bar").innerHTML = navBar();
