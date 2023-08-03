@@ -29,7 +29,7 @@
                     </select>
                 </div>
                 <div class="msrp-display">
-                    <h3 class="select-text">Total MSRP: <span id="total-msrp">None</span></h3>
+                    <h3 class="select-text">Total MSRP: <span id="total-msrp">0$</span></h3>
                 </div>
             </div>
         </div>
@@ -43,16 +43,16 @@
             <div class="input-box">
                 <p class="input-title"><strong>Estimated Credit Score</strong></p>
                 <select class="credit-score user-input">
-                    <option value="Poor">Poor</option>
-                    <option value="Fair">Fair</option>
-                    <option value="Good">Good</option>
-                    <option value="Excellent">Excellent</option>
+                    <option value="Excellent" selected="selected">Excellent 720+</option>
+                    <option value="Good">Good 719-690</option>
+                    <option value="Fair">Fair 689-630</option>
+                    <option value="Poor">Poor 629-520</option>
                 </select>
             </div>
 
             <div class="input-box">
                 <p class="input-title"><strong>Cash Down</strong></p>
-                <input type="number" min="0" max="20000" class="cash-down user-input" />
+                <input value="$2000" type="text" class="cash-down user-input no-outline" />
             </div>
 
             <div class="input-box">
@@ -68,13 +68,13 @@
             <div class="input-box">
                 <p class="input-title"><strong>Estimated APR</strong></p>
                     <div class="estimated-apr user-input">
-                        <p class="apr-text">Estimated APR: <span class="apr-value">None</span></p>
+                        <p id="apr-text">0%</p>
                     </div>
             </div>
 
             <div class="input-box">
                 <p class="input-title"><strong>Estimated Trade-in Value</strong></p>
-                    <input class="estimated-trade-in-value user-input" type="number"/>
+                    <input class="estimated-trade-in-value user-input no-outline" type="text" value="$0"/>
             </div>
         </div>
 
@@ -103,9 +103,9 @@
         </div>
 
         <div id="contact-button-container" class="body-container">
-            <button type="button" class="cbutton">
+            <a class="cbutton" href="./About_us.html">
                 <strong>CONTACT DEALERSHIP</strong>
-            </button>
+            </a>
         </div>
 
         <div id="finance-terms-container">
@@ -120,6 +120,12 @@
                 customers will qualify.
             </p>
         </div>
+
+        <footer>
+            <div class="footer-text-container">
+                <p class="footer-text">© 2023 Juan Rosales, John Russel - All Rights Reserved</p>
+            </div>
+        </footer>
     </body>
     <!-- import navbar -->
     <script src="../JS/navbar.js"></script>
