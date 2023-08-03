@@ -40,33 +40,65 @@
         </div> 
 
         <div id="input-box-container" class="body-container">
-            <select class="credit-score input-box">
-                <option value="Poor">Poor</option>
-                <option value="Fair">Fair</option>
-                <option value="Good">Good</option>
-                <option value="Excellent">Excellent</option>
-            </select>
-            <input type="number" min="0" max="20000" class="cash-down input-box" />
-            <select class="term-length input-box">
-                <option value="24">24 Months</option>
-                <option value="36">36 Months</option>
-                <option value="48">48 Months</option>
-                <option value="64">64 Months</option>
-            </select>
-            <div class="estimated-apr input-box">
-                <p class="apr-text">Estimated APR: <span class="apr-value">None</span></p>
+            <div class="input-box">
+                <p class="input-title"><strong>Estimated Credit Score</strong></p>
+                <select class="credit-score user-input">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
             </div>
-            <input class="estimated-trade-in-value input-box" type="number"/>
+
+            <div class="input-box">
+                <p class="input-title"><strong>Cash Down</strong></p>
+                <input type="number" min="0" max="20000" class="cash-down user-input" />
+            </div>
+
+            <div class="input-box">
+                <p class="input-title"><strong>Term Length</strong></p>
+                    <select class="term-length user-input">
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="64">64 Months</option>
+                    </select>
+            </div>
+
+            <div class="input-box">
+                <p class="input-title"><strong>Estimated APR</strong></p>
+                    <div class="estimated-apr user-input">
+                        <p class="apr-text">Estimated APR: <span class="apr-value">None</span></p>
+                    </div>
+            </div>
+
+            <div class="input-box">
+                <p class="input-title"><strong>Estimated Trade-in Value</strong></p>
+                    <input class="estimated-trade-in-value user-input" type="number"/>
+            </div>
         </div>
 
         <div id="display-box-container" class="body-container">
-            <div class="months-display display"></div>
+            <div class="months-display display">
+                <input class="result-text" id="result1" type="text" disabled />
+                <p id="display-text1">Months</p>
+            </div>
             <div class="line1 line"></div>
-            <div class="estimated-display display"></div>
+            <div class="estimated-display display">
+                <input class="result-text" id="result2" type="text" disabled />
+                <p id="display-text2">Estimated APR</p>                
+            </div>
             <div class="line2 line"></div>
-            <div class="down-payment-display display"></div>
+            <div class="down-payment-display display">
+                <input class="result-text" id="result3" type="text" disabled />
+                <p id="display-text3">Down Payment</p>
+            </div>
             <div class="line3 line"></div>
-            <div class="finance-display display"></div>
+            <div class="finance-display display">
+                <p id="display-text4">Finance for</p>
+                <input id="result4" type="text" disabled />
+                <p id="display-text5">/ month</p>
+            </div>
 
         </div>
 
@@ -91,4 +123,5 @@
     </body>
     <!-- import navbar -->
     <script src="../JS/navbar.js"></script>
+    <script type="text/javascript" src="../JS/financial.js"></script>
 </html>
