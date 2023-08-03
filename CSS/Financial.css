@@ -37,7 +37,7 @@ select{
 
 
 .select-container{
-    width: 20%
+    width: 30%;
 }
 
 
@@ -336,4 +336,13 @@ footer .footer-text-container{
     justify-content: center;
     align-items: center;
     color: #FFFFFF
+}
+
+.car-select-container{
+    width: 100%;
+    position: relative;
+    right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
