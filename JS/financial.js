@@ -1,27 +1,35 @@
-/* placement code so I could do use CSS to change result look */
-document.getElementById("result1").value = 72;
-document.getElementById("result2").value = 8.49 + "%";
-document.getElementById("result3").value = "$" + 2000;
-document.getElementById("result4").value = "$" + 395;
-
-
-
-
 /* "selected car", "selected package", "Total SRP", "Picture of car" */
-var a = document.getElementById("car-selection").value;
-var b = document.getElementById("package-selection").value;
-var c = document.getElementById("total-msrp").value;
-var d = document.getElementById("car-image").value;
+var carSelectionElement = document.getElementById("car-selection");
+var packageSelectionElement = document.getElementById("package-selection");
+var totalMSRPElement = document.getElementById("total-msrp");
+var d = document.getElementById("car-image");
 
 /* user input boxes */
-var e = document.getElementById("selected-credit-score").value;
-var f = document.getElementById("selected-cash-down").value;
-var g = document.getElementById("selected-term-length").value;
-var h = document.getElementById("estimated-apr-display1").value;
-var i = document.getElementById("trade-in-value").value;
+var selectedCreditScoreElement = document.getElementById("selected-credit-score");
+var selectedCashDowmElement = document.getElementById("selected-cash-down");
+var selectedTermLength = document.getElementById("selected-term-length");
+var estimatedAPRElement = document.getElementById("estimated-apr-display1");
+var tradeInValueElement = document.getElementById("trade-in-value");
 
 /* display boxes */
-var j = document.getElementById("result1").value;
-var k = document.getElementById("result2").value;
-var l = document.getElementById("result3").value;
-var m = document.getElementById("result4").value;
+var monthResultElement = document.getElementById("month-result");
+var aprResultElement = document.getElementById("apr-result");
+var downPaymentResultElement = document.getElementById("down-payment-result");
+var financeResultElement = document.getElementById("finance-result");
+
+
+// car prices
+let carPrices = {
+    'McLaren P1': 350000,
+    'Pagani Huayra': 150000,
+    'Audi R8': 100000,
+}
+
+// package prices
+let packagePrices = {
+    'Tech Package': 1000,
+    'Sport Package': 1000,
+    'Racing Package': 1000,
+    'Basic Service Package': 1000,
+    'Premium Service Package': 1000,
+}
