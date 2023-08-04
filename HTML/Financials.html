@@ -14,66 +14,103 @@
         <div class="heading-container body-container">
             <div class="car-selection-form">
                 <h1 id="top-heading">Payment Calculator | <span class="car-title">Selected Car</span></h1>
-                <div class="select-container">
-                    <select class="select-text">
-                        <option value="Car-1">Car 1</option>
-                        <option value="Car-2">Car 2</option>
-                        <option value="Car-3">Car 3</option>
-                    </select>
-                </div>
-                <div class="select-container">
-                    <select class="select-text">
-                        <option value="Package-1">Package 1</option>
-                        <option value="Package-2">Package 2</option>
-                        <option value="Package-3">Package 3</option>
-                    </select>
-                </div>
-                <div class="msrp-display">
-                    <h3 class="select-text">Total MSRP: <span id="total-msrp">None</span></h3>
+                <div class="car-select-container">
+                    <div class="select-container">
+                        <select id="car-selection" class="select-text">
+                            <option selected="selected" value="Car-1">McClaren P1</option>
+                            <option value="Car-2">Pagani Huayra</option>
+                            <option value="Car-3">Audi i8</option>
+                        </select>
+                    </div>
+                    <div class="select-container">
+                        <select id="package-selection" class="select-text">
+                            <option value="Tech Package">Tech Package</option>
+                            <option value="Sport Package">Sport Package</option>
+                            <option value="Racing Package">Racing Package</option>
+                            <option value="Basic Service Package">Basic Service Package</option>
+                            <option value="Premium Service Package">Premium Service Package</option>
+                        </select>
+                    </div>
+                    <div class="msrp-display">
+                        <h3 class="select-text">Total MSRP: <span id="total-msrp">0$</span></h3>
+                    </div>
                 </div>
             </div>
         </div>
 
 
         <div class="car-image-container body-container">
-            <img src="../Images/test_car_for_financial_page.jpg" class="image">
+            <img src="../Images/test_car_for_financial_page.jpg" class="image" id="car-image">
         </div> 
 
         <div id="input-box-container" class="body-container">
-            <select class="credit-score input-box">
-                <option value="Poor">Poor</option>
-                <option value="Fair">Fair</option>
-                <option value="Good">Good</option>
-                <option value="Excellent">Excellent</option>
-            </select>
-            <input type="number" min="0" max="20000" class="cash-down input-box" />
-            <select class="term-length input-box">
-                <option value="24">24 Months</option>
-                <option value="36">36 Months</option>
-                <option value="48">48 Months</option>
-                <option value="64">64 Months</option>
-            </select>
-            <div class="estimated-apr input-box">
-                <p class="apr-text">Estimated APR: <span class="apr-value">None</span></p>
+            <div class="input-box">
+                <p class="input-title"><strong>Estimated Credit Score</strong></p>
+                <select id="selected-credit-score" class="credit-score user-input">
+                    <option value="Excellent" selected="selected">Excellent 720+</option>
+                    <option value="Good">Good 719-690</option>
+                    <option value="Fair">Fair 689-630</option>
+                    <option value="Poor">Poor 629-520</option>
+                </select>
             </div>
-            <input class="estimated-trade-in-value input-box" type="number"/>
+
+            <div class="input-box">
+                <p class="input-title"><strong>Cash Down</strong></p>
+                <input value="$2000" type="text" id="selected-cash-down" class="cash-down user-input no-outline" />
+            </div>
+
+            <div class="input-box">
+                <p class="input-title"><strong>Term Length</strong></p>
+                    <select id="selected-term-length" class="term-length user-input">
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="64">60 Months</option>
+                        <option selected="selected" value="72">72 Months</option>
+                    </select>
+            </div>
+
+            <div class="input-box">
+                <p class="input-title"><strong>Estimated APR</strong></p>
+                    <div class="estimated-apr user-input">
+                        <input class="user-input" id="estimated-apr-display1" type="text" disabled></input>
+                    </div>
+            </div>
+
+            <div class="input-box">
+                <p class="input-title"><strong>Estimated Trade-in Value</strong></p>
+                    <input id="trade-in-value" class="estimated-trade-in-value user-input no-outline" type="text" value="$0"/>
+            </div>
         </div>
 
         <div id="display-box-container" class="body-container">
-            <div class="months-display display"></div>
+            <div class="months-display display">
+                <input class="result-text" id="result1" type="text" disabled />
+                <p id="display-text1">Months</p>
+            </div>
             <div class="line1 line"></div>
-            <div class="estimated-display display"></div>
+            <div class="estimated-display display">
+                <input class="result-text" id="result2" type="text" disabled />
+                <p id="display-text2">Estimated APR</p>                
+            </div>
             <div class="line2 line"></div>
-            <div class="down-payment-display display"></div>
+            <div class="down-payment-display display">
+                <input class="result-text" id="result3" type="text" disabled />
+                <p id="display-text3">Down Payment</p>
+            </div>
             <div class="line3 line"></div>
-            <div class="finance-display display"></div>
+            <div class="finance-display display">
+                <p id="display-text4">Finance for</p>
+                <input id="result4" type="text" disabled />
+                <p id="display-text5">/ month</p>
+            </div>
 
         </div>
 
         <div id="contact-button-container" class="body-container">
-            <button type="button" class="cbutton">
+            <a class="cbutton" href="./About_us.html">
                 <strong>CONTACT DEALERSHIP</strong>
-            </button>
+            </a>
         </div>
 
         <div id="finance-terms-container">
@@ -88,7 +125,14 @@
                 customers will qualify.
             </p>
         </div>
+
+        <footer>
+            <div class="footer-text-container">
+                <p class="footer-text">© 2023 Juan Rosales, John Russell - All Rights Reserved</p>
+            </div>
+        </footer>
     </body>
     <!-- import navbar -->
     <script src="../JS/navbar.js"></script>
+    <script type="text/javascript" src="../JS/financial.js"></script>
 </html>
