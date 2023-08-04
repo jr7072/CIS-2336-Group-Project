@@ -36,10 +36,10 @@ a.active,a:hover{
 }
 
 #img1{
+    float: left;
+    display: inline-block;
     position: absolute;
-    top: -160px;
-    right: 1150px;
-    width: 40%;
+    width: 90px;
     height: auto;
     opacity: 1;
 }
