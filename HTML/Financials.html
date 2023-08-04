@@ -16,14 +16,14 @@
                 <h1 id="top-heading">Payment Calculator | <span class="car-title">Selected Car</span></h1>
                 <div class="car-select-container">
                     <div class="select-container">
-                        <select class="select-text">
+                        <select id="car-selection" class="select-text">
                             <option selected="selected" value="Car-1">McClaren P1</option>
                             <option value="Car-2">Pagani Huayra</option>
                             <option value="Car-3">Audi i8</option>
                         </select>
                     </div>
                     <div class="select-container">
-                        <select class="select-text">
+                        <select id="package-selection" class="select-text">
                             <option value="Tech Package">Tech Package</option>
                             <option value="Sport Package">Sport Package</option>
                             <option value="Racing Package">Racing Package</option>
@@ -40,13 +40,13 @@
 
 
         <div class="car-image-container body-container">
-            <img src="../Images/test_car_for_financial_page.jpg" class="image">
+            <img src="../Images/test_car_for_financial_page.jpg" class="image" id="car-image">
         </div> 
 
         <div id="input-box-container" class="body-container">
             <div class="input-box">
                 <p class="input-title"><strong>Estimated Credit Score</strong></p>
-                <select class="credit-score user-input">
+                <select id="selected-credit-score" class="credit-score user-input">
                     <option value="Excellent" selected="selected">Excellent 720+</option>
                     <option value="Good">Good 719-690</option>
                     <option value="Fair">Fair 689-630</option>
@@ -56,12 +56,12 @@
 
             <div class="input-box">
                 <p class="input-title"><strong>Cash Down</strong></p>
-                <input value="$2000" type="text" class="cash-down user-input no-outline" />
+                <input value="$2000" type="text" id="selected-cash-down" class="cash-down user-input no-outline" />
             </div>
 
             <div class="input-box">
                 <p class="input-title"><strong>Term Length</strong></p>
-                    <select class="term-length user-input">
+                    <select id="selected-term-length" class="term-length user-input">
                         <option value="24">24 Months</option>
                         <option value="36">36 Months</option>
                         <option value="48">48 Months</option>
@@ -73,13 +73,13 @@
             <div class="input-box">
                 <p class="input-title"><strong>Estimated APR</strong></p>
                     <div class="estimated-apr user-input">
-                        <p id="apr-text">0%</p>
+                        <input class="user-input" id="estimated-apr-display1" type="text" disabled></input>
                     </div>
             </div>
 
             <div class="input-box">
                 <p class="input-title"><strong>Estimated Trade-in Value</strong></p>
-                    <input class="estimated-trade-in-value user-input no-outline" type="text" value="$0"/>
+                    <input id="trade-in-value" class="estimated-trade-in-value user-input no-outline" type="text" value="$0"/>
             </div>
         </div>
 
