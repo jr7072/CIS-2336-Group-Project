@@ -17,14 +17,14 @@
                 <div class="car-select-container">
                     <div class="select-container">
                         <select id="car-selection" class="select-text">
-                            <option selected="selected" value="Car-1">McClaren P1</option>
-                            <option value="Car-2">Pagani Huayra</option>
-                            <option value="Car-3">Audi i8</option>
+                            <option selected="selected" value="McLaren P1">McLaren P1</option>
+                            <option value="Pagani Huayra">Pagani Huayra</option>
+                            <option value="Audi R8">Audi R8</option>
                         </select>
                     </div>
                     <div class="select-container">
                         <select id="package-selection" class="select-text">
-                            <option value="Tech Package">Tech Package</option>
+                            <option selected="selected" value="Tech Package">Tech Package</option>
                             <option value="Sport Package">Sport Package</option>
                             <option value="Racing Package">Racing Package</option>
                             <option value="Basic Service Package">Basic Service Package</option>
@@ -32,7 +32,7 @@
                         </select>
                     </div>
                     <div class="msrp-display">
-                        <h3 class="select-text">Total MSRP: <span id="total-msrp">0$</span></h3>
+                        <h3 class="select-text">Total MSRP: <span id="total-msrp">$351000</span></h3>
                     </div>
                 </div>
             </div>
@@ -40,14 +40,14 @@
 
 
         <div class="car-image-container body-container">
-            <img src="../Images/test_car_for_financial_page.jpg" class="image" id="car-image">
+            <img src="../Images/2014-mclaren-p1-1111-charlie-magee-1531410060.jpg" class="image" id="car-image">
         </div> 
 
         <div id="input-box-container" class="body-container">
             <div class="input-box">
                 <p class="input-title"><strong>Estimated Credit Score</strong></p>
                 <select id="selected-credit-score" class="credit-score user-input">
-                    <option value="Excellent" selected="selected">Excellent 720+</option>
+                    <option selected="selected" value="Excellent" selected>Excellent 720+</option>
                     <option value="Good">Good 719-690</option>
                     <option value="Fair">Fair 689-630</option>
                     <option value="Poor">Poor 629-520</option>
@@ -73,7 +73,7 @@
             <div class="input-box">
                 <p class="input-title"><strong>Estimated APR</strong></p>
                     <div class="estimated-apr user-input">
-                        <input class="user-input" id="estimated-apr-display1" type="text" disabled></input>
+                        <input class="user-input" id="estimated-apr-display1" type="text" disabled value="5%"></input>
                     </div>
             </div>
 
@@ -85,23 +85,23 @@
 
         <div id="display-box-container" class="body-container">
             <div class="months-display display">
-                <input class="result-text" id="result1" type="text" disabled />
+                <input class="result-text" id="month-result" type="text" disabled value="72"/>
                 <p id="display-text1">Months</p>
             </div>
             <div class="line1 line"></div>
             <div class="estimated-display display">
-                <input class="result-text" id="result2" type="text" disabled />
+                <input class="result-text" id="apr-result" type="text" disabled value="5%"/>
                 <p id="display-text2">Estimated APR</p>                
             </div>
             <div class="line2 line"></div>
             <div class="down-payment-display display">
-                <input class="result-text" id="result3" type="text" disabled />
+                <input class="result-text" id="down-payment-result" type="text" disabled value="$2000"/>
                 <p id="display-text3">Down Payment</p>
             </div>
             <div class="line3 line"></div>
             <div class="finance-display display">
                 <p id="display-text4">Finance for</p>
-                <input id="result4" type="text" disabled />
+                <input id="finance-result" type="text" disabled value="$5,620.62"/>
                 <p id="display-text5">/ month</p>
             </div>
 
