@@ -68,7 +68,7 @@ html, body{
 }
 
 .table-wrapper{
-
+    margin: 1% 0;
     width: 45%;
     height: auto;
     display: flex;
