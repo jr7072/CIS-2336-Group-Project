@@ -70,7 +70,7 @@ html, body{
 .table-wrapper{
 
     width: 45%;
-    height: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
     position: relative;
