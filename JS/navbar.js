@@ -1,8 +1,8 @@
 const navBar = () => {
+  // <img src="../Images/4h.png" id="img1">
 
   return (
     `
-      <img src="../Images/4h.png" id="img1">
       <ul>
           <li><a href="./Home.html">Home</a></li>
           <li><a href="#">Car 1</a></li>
