@@ -3,6 +3,7 @@ var carSelectionElement = document.getElementById("car-selection");
 var packageSelectionElement = document.getElementById("package-selection");
 var totalMSRPElement = document.getElementById("total-msrp");
 var carImageElement = document.getElementById("car-image");
+var carTitleElement = document.getElementById("car-title");
 
 /* user input boxes */
 var selectedCreditScoreElement = document.getElementById("selected-credit-score");
@@ -68,10 +69,11 @@ states = {
 
 const updateCarSelection = (event) => {
     states.selectedCar = event.target.value;
-    console.log(states.selectedCar);
     states.msrp = carPrices[states.selectedCar] + packagePrices[states.selectedPackage];
     totalMSRPElement.innerHTML = '$' + states.msrp;
     carImageElement.src = carImages[states.selectedCar];
+    carTitleElement.innerHTML = states.selectedCar;
+
     let monthlyPayment = Math.round((calculateMonthlyPayment() + Number.EPSILON) * 100) / 100;
     financeResultElement.value = '$' + monthlyPayment;
 }
