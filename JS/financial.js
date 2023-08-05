@@ -72,6 +72,8 @@ const updateCarSelection = (event) => {
     states.msrp = carPrices[states.selectedCar] + packagePrices[states.selectedPackage];
     totalMSRPElement.innerHTML = '$' + states.msrp;
     carImageElement.src = carImages[states.selectedCar];
+    let monthlyPayment = Math.round((calculateMonthlyPayment() + Number.EPSILON) * 100) / 100;
+    financeResultElement.value = '$' + monthlyPayment;
 }
 
 
@@ -82,6 +84,8 @@ const updatePackageSelection = (event) => {
     console.log(states.selectedPackage);
     states.msrp = carPrices[states.selectedCar] + packagePrices[states.selectedPackage];
     totalMSRPElement.innerHTML = '$' + states.msrp;
+    let monthlyPayment = Math.round((calculateMonthlyPayment() + Number.EPSILON) * 100) / 100;
+    financeResultElement.value = '$' + monthlyPayment;
 }
 
 // finance calculations
@@ -120,9 +124,28 @@ const handleCashDownChange = (value) => {
     financeResultElement.value = '$' + monthlyPayment;
 }
 
+const handleTradeInValueChange = (value) => {
+
+    states.tradeInValue = value;
+    states.tradeInValue = states.tradeInValue.replace('$', '');
+    states.tradeInValue = parseInt(states.tradeInValue);
+    tradeInValueElement.value = '$' + states.tradeInValue;
+    let monthlyPayment = Math.round((calculateMonthlyPayment() + Number.EPSILON) * 100) / 100;
+    financeResultElement.value = '$' + monthlyPayment;
+}
+
+const handleTermLengthChange = (value) => {
+    states.termLength = value;
+    monthResultElement.value = states.termLength;
+    let monthlyPayment = Math.round((calculateMonthlyPayment() + Number.EPSILON) * 100) / 100;
+    financeResultElement.value = '$' + monthlyPayment;
+}
+
 const selectChangeFunctions = {
     'selected-credit-score': handleCreditScoreChange,
     'selected-cash-down': handleCashDownChange,
+    'selected-term-length': handleTermLengthChange,
+    'trade-in-value': handleTradeInValueChange,
 }
 
 const updateInputs = (event) => {
@@ -140,6 +163,8 @@ carSelectionElement.addEventListener('change', updateCarSelection);
 packageSelectionElement.addEventListener('change', updatePackageSelection);
 selectedCreditScoreElement.addEventListener('change', updateInputs);
 selectedCashDownElement.addEventListener('change', updateInputs);
+tradeInValueElement.addEventListener('change', updateInputs);
+selectedTermLength.addEventListener('change', updateInputs);
 
 
 // caculations
