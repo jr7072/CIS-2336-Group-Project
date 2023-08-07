@@ -347,3 +347,7 @@ footer .footer-text-container{
     justify-content: space-around;
     align-items: center;
 }
+
+#down-payment-result{
+    font-size: 54px;
+}
