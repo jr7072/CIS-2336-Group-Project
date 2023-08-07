@@ -1,11 +1,9 @@
-const imageUrls = ["../Images/mccleren/front.jpg", "../Images/mccleren/back.jpg", "../Images/mccleren/inside.jpg"];
+const imageUrls = ["../Images/front.jpg", "../Images/back.jpg", "../Images/inside.jpg"];
 let currentImageIndex = 0;
 const imageUrlsPagani = ["../Images/Front Angle View 1.png", 
-"../Images/Pagani Huayra/Front Angle View 2.png", "../Images/Pagani Huayra/Front Angle View.png" ];
-const imageUrlsBmw = ["../Images/bmw i8/front-left-side.png", "../Images/bmw i8/Door Handle.png", 
-"../Images/bmw i8/Interior.png", "../Images/bmw i8/Rear Medium Side View.png",
-"../Images/bmw i8/Rear Right Side.png", "../Images/bmw i8/Taillight.png",
-"../Images/bmw i8/Wheel.png"];
+"../Images/Front Angle View 2.png", "../Images/Front Angle View.png" ];
+const imageUrlsBmw = ["../Images/front-left-side.png", "../Images/Door Handle.png", 
+"../Images/Interior.png"];
 function changeImageForward() {
 const imageElement = document.getElementById("image");
 currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
