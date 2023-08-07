@@ -1,29 +1,76 @@
-.pageHeader{
-    text-align: center;
-}
-
-.carRow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
-}
-
-.carRow div{
-    
-    
-    margin-top: 2%;
-    
-}
-
-.carName{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 0%;
-
-}
-
-.carPrice{
-    text-align: center;
-    margin-top: 2%;
-}
+body {
+	background: radial-gradient(#ffd6d6,#ff54ff);
+    }
+        .car-Header{
+            display: flex;
+            padding-top: 40px;
+            margin-left: 30px;
+            padding-bottom: 20px;
+            justify-content: center;
+            padding-top: 20px;
+            font-size: 30px;
+        }
+        .car-Image{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+        .car-Specs{
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            border-bottom: solid;
+        }
+        .stat-category{
+            display: flex;
+        }
+        .stat-Listings{
+            display: flex;
+            width: 1000px;
+        }
+        .left-Side{
+            width: 300px;
+            display: flex;
+            align-items: center;
+        }
+        .right-Side{
+            margin-left: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stats{
+            display: flex;
+            flex-direction: column;
+text-align: justify;
+            margin-left: 10%;
+        }
+        .stat-Header{
+            border-bottom: solid;
+            height: 80px;
+            display: flex;
+        }
+        .details{
+            font-size: 25px; margin-top: 10px;
+        }
+        #changeButtonLeft{
+            background: transparent; width: 40px; height: 40px;
+        display: flex; align-items: center; margin-top: 10%; font-size: 70px; margin-right: 40px; border: none;
+        }
+        #changeButtonRight{
+            background: transparent; width: 40px; height: 40px;
+        display: flex; align-items: center; margin-top: 10%; font-size: 70px; margin-left: 0px; border: none;
+        }
+        .bmw-Torque{
+            font-size: 15px;
+        }
+        footer {
+            text-align: center;
+            bottom: 0;
+            color: white;
+            background-color: black;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
