@@ -34,3 +34,24 @@
     background: #ddd;
     color: black;
   }
+
+  .footer{
+    position:absolute;
+    bottom:0;
+    }
+
+    footer .footer-text-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF
+    } 
+
+  .box{
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    margin-top: 280px;
+    margin-left: 210px;
+    font-family: fantasy; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;
+  }
