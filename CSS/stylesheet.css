@@ -1,5 +1,6 @@
 body {
-	background: radial-gradient(#ffd6d6,#ff54ff);
+	background-color: black;
+    color: white;
     }
         .car-Header{
             display: flex;
@@ -56,10 +57,12 @@ text-align: justify;
         #changeButtonLeft{
             background: transparent; width: 40px; height: 40px;
         display: flex; align-items: center; margin-top: 10%; font-size: 70px; margin-right: 40px; border: none;
+        color: gray;
         }
         #changeButtonRight{
             background: transparent; width: 40px; height: 40px;
         display: flex; align-items: center; margin-top: 10%; font-size: 70px; margin-left: 0px; border: none;
+        color: gray;
         }
         .bmw-Torque{
             font-size: 15px;
