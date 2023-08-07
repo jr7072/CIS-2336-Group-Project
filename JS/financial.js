@@ -23,7 +23,7 @@ var financeResultElement = document.getElementById("finance-result");
 let carPrices = {
     'McLaren P1': 350000,
     'Pagani Huayra': 150000,
-    'Audi R8': 100000,
+    'BMW i8': 100000,
 }
 
 
@@ -40,7 +40,7 @@ let packagePrices = {
 let carImages = {
     'McLaren P1': '../Images/2014-mclaren-p1-1111-charlie-magee-1531410060.jpg',
     'Pagani Huayra': '../Images/Pagani-Huayra-BC-Roadster-02-1.webp',
-    'Audi R8': '../Images/2023-audi-r8-v10-gt-rwd.webp',
+    'BMW i8': '../Images/bmw i8/front-left-side.png',
 }
 
 
@@ -99,6 +99,10 @@ const calculateMonthlyPayment = () => {
     let years = states.termLength / 12;
     let totalInterest = totalMSRP * (states.estimatedAPR / 100) * years;
     let monthlyPayment = (totalMSRP + totalInterest) / states.termLength;
+
+    if (monthlyPayment < 0) {
+        monthlyPayment = 0;
+    }
 
     return monthlyPayment
 }
