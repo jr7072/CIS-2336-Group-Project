@@ -39,8 +39,13 @@ a.active,a:hover{
     float: left;
     display: inline-block;
     position: absolute;
+<<<<<<< HEAD
+    width: auto;
+    height: 100%;
+=======
     width: 90px;
     height: auto;
+>>>>>>> 6d6456941c1868aec7d800ef15a7394ed21cb413
     opacity: 1;
 }
 
