@@ -75,6 +75,7 @@ body{
 .about-content p{
     font-size: 18px;
     Line-height: 1.5;
+    margin-bottom: 25px;
     color:#666;
 }
 
@@ -108,3 +109,14 @@ btn.active, btn:hover{
 
     position: absolute; bottom: 0px; 
 }
+.footer{
+    position:absolute;
+    bottom:0;
+    }
+
+    footer .footer-text-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF
+    } 
