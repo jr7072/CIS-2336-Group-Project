@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html class="main-html">
 <title> Car 1 Home </title>
-<head> </head>
+<head> 
+	<link rel="stylesheet" href="../CSS/Car.css"/>
+	<link rel="stylesheet" href="../CSS/navbar.css"/>
+</head>
 <!-- 2 row frameset -->
-<frameset rows="8%,*,3%" border="0">
-	<frame src="../Framesets/Menu.html" name="Menu" scrolling="no">
-	<frame src="../Framesets/Content.html" name="Contents">
-        <frame src="../Framesets/Footer.html" name="Footer">
-</frameset>
+<body class="main-body">
+	<nav id="nav-bar"></nav>
+	<iframe class="main-content" src="./Framesets/Content.html" name="Contents"></iframe>
+	<iframe class="footer" src="./Framesets/Footer.html" name="Footer"></iframe>
+</body>
 <script src="../JS/navbar.js"></script>
 </html>
