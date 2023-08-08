@@ -296,7 +296,6 @@ font-size: 22px;
     top: 15%;
 }
 
-<<<<<<< HEAD
 #finance-result {
     position: absolute;
     text-align: left;
@@ -304,15 +303,6 @@ font-size: 22px;
     font-size: 40px;
     width: 100%;
     bottom: 20px;
-=======
-#result4 {
-    position: absolute;
-    text-align: left;
-    color: white;
-    font-size: 60px;
-    width: 100%;
-    bottom: 0;
->>>>>>> 95ddd51a98b5cbba6f92ffe6d9c8d5dda03e78c7
     margin-bottom: 30px;
     margin-left: 20px;
     background-color: transparent;
@@ -356,11 +346,8 @@ footer .footer-text-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-<<<<<<< HEAD
 }
 
 #down-payment-result{
     font-size: 54px;
-=======
->>>>>>> 95ddd51a98b5cbba6f92ffe6d9c8d5dda03e78c7
 }
