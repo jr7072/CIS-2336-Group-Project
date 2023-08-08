@@ -13,18 +13,18 @@
 
         <div class="heading-container body-container">
             <div class="car-selection-form">
-                <h1 id="top-heading">Payment Calculator | <span class="car-title">Selected Car</span></h1>
+                <h1 id="top-heading">Payment Calculator | <span id="car-title">McLaren P1</span></h1>
                 <div class="car-select-container">
                     <div class="select-container">
-                        <select class="select-text">
-                            <option selected="selected" value="Car-1">McClaren P1</option>
-                            <option value="Car-2">Pagani Huayra</option>
-                            <option value="Car-3">Audi i8</option>
+                        <select id="car-selection" class="select-text">
+                            <option selected="selected" value="McLaren P1">McLaren P1</option>
+                            <option value="Pagani Huayra">Pagani Huayra</option>
+                            <option value="BMW i8">BMW i8</option>
                         </select>
                     </div>
                     <div class="select-container">
-                        <select class="select-text">
-                            <option value="Tech Package">Tech Package</option>
+                        <select id="package-selection" class="select-text">
+                            <option selected="selected" value="Tech Package">Tech Package</option>
                             <option value="Sport Package">Sport Package</option>
                             <option value="Racing Package">Racing Package</option>
                             <option value="Basic Service Package">Basic Service Package</option>
@@ -32,7 +32,7 @@
                         </select>
                     </div>
                     <div class="msrp-display">
-                        <h3 class="select-text">Total MSRP: <span id="total-msrp">0$</span></h3>
+                        <h3 class="select-text">Total MSRP: <span id="total-msrp">$362000</span></h3>
                     </div>
                 </div>
             </div>
@@ -40,14 +40,14 @@
 
 
         <div class="car-image-container body-container">
-            <img src="../Images/test_car_for_financial_page.jpg" class="image">
+            <img src="../Images/2014-mclaren-p1-1111-charlie-magee-1531410060.jpg" class="image" id="car-image">
         </div> 
 
         <div id="input-box-container" class="body-container">
             <div class="input-box">
                 <p class="input-title"><strong>Estimated Credit Score</strong></p>
-                <select class="credit-score user-input">
-                    <option value="Excellent" selected="selected">Excellent 720+</option>
+                <select id="selected-credit-score" class="credit-score user-input">
+                    <option selected="selected" value="Excellent" selected>Excellent 720+</option>
                     <option value="Good">Good 719-690</option>
                     <option value="Fair">Fair 689-630</option>
                     <option value="Poor">Poor 629-520</option>
@@ -56,12 +56,12 @@
 
             <div class="input-box">
                 <p class="input-title"><strong>Cash Down</strong></p>
-                <input value="$2000" type="text" class="cash-down user-input no-outline" />
+                <input value="$2000" type="text" id="selected-cash-down" class="cash-down user-input no-outline" />
             </div>
 
             <div class="input-box">
                 <p class="input-title"><strong>Term Length</strong></p>
-                    <select class="term-length user-input">
+                    <select id="selected-term-length" class="term-length user-input">
                         <option value="24">24 Months</option>
                         <option value="36">36 Months</option>
                         <option value="48">48 Months</option>
@@ -73,35 +73,35 @@
             <div class="input-box">
                 <p class="input-title"><strong>Estimated APR</strong></p>
                     <div class="estimated-apr user-input">
-                        <p id="apr-text">0%</p>
+                        <input class="user-input" id="estimated-apr-display1" type="text" disabled value="5%"></input>
                     </div>
             </div>
 
             <div class="input-box">
                 <p class="input-title"><strong>Estimated Trade-in Value</strong></p>
-                    <input class="estimated-trade-in-value user-input no-outline" type="text" value="$0"/>
+                    <input id="trade-in-value" class="estimated-trade-in-value user-input no-outline" type="text" value="$0"/>
             </div>
         </div>
 
         <div id="display-box-container" class="body-container">
             <div class="months-display display">
-                <input class="result-text" id="result1" type="text" disabled />
+                <input class="result-text" id="month-result" type="text" disabled value="72"/>
                 <p id="display-text1">Months</p>
             </div>
             <div class="line1 line"></div>
             <div class="estimated-display display">
-                <input class="result-text" id="result2" type="text" disabled />
+                <input class="result-text" id="apr-result" type="text" disabled value="5%"/>
                 <p id="display-text2">Estimated APR</p>                
             </div>
             <div class="line2 line"></div>
             <div class="down-payment-display display">
-                <input class="result-text" id="result3" type="text" disabled />
+                <input class="result-text" id="down-payment-result" type="text" disabled value="$2000"/>
                 <p id="display-text3">Down Payment</p>
             </div>
             <div class="line3 line"></div>
             <div class="finance-display display">
                 <p id="display-text4">Finance for</p>
-                <input id="result4" type="text" disabled />
+                <input id="finance-result" type="text" disabled value="$5,620.62"/>
                 <p id="display-text5">/ month</p>
             </div>
 
@@ -128,7 +128,7 @@
 
         <footer>
             <div class="footer-text-container">
-                <p class="footer-text">© 2023 Juan Rosales, John Russel - All Rights Reserved</p>
+                <p class="footer-text">© 2023 Juan Rosales, John Russell - All Rights Reserved</p>
             </div>
         </footer>
     </body>

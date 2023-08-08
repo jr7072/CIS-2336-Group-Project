@@ -251,6 +251,7 @@ font-size: 22px;
 .user-input  {
     background-color: #387D7A;
     font-size: 24px;
+    color: black;
 }
 
 .cash-down, .estimated-trade-in-value {
@@ -295,13 +296,13 @@ font-size: 22px;
     top: 15%;
 }
 
-#result4 {
+#finance-result {
     position: absolute;
     text-align: left;
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     width: 100%;
-    bottom: 0;
+    bottom: 20px;
     margin-bottom: 30px;
     margin-left: 20px;
     background-color: transparent;
@@ -335,7 +336,7 @@ footer .footer-text-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 .car-select-container{
@@ -345,4 +346,8 @@ footer .footer-text-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#down-payment-result{
+    font-size: 54px;
 }
