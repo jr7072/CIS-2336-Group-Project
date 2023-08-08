@@ -1,0 +1,29 @@
+.main{
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+ }
+col{width: 380px;}
+body{ background-color:black;
+      color: white;
+      height: 100vh;
+      width: 100vw;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+}   
+
+
+.description{
+      width: auto;
+      height: 100%;
+}
+
+.gallery{
+      width: 70%;
+      height: 100%;
+}
+
+
+
